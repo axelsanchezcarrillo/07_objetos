@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Alumnos Inscritos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container {
+            width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Alumnos inscritos</h1>
+    <form>
+        <!-- No de cuenta -->
+        <div class="form-group">
+            <label for="no_cuenta">
+                No. de cuenta:
+            </label>
+            <input type="text" id="no_cuenta" name="no_cuenta" class="form-control"
+            placeholder="Escribe tu número de cuenta">
+        </div>
+
+        <!-- Nombre -->
+        <div class="form-group">
+            <label for="nombre">
+                Nombre:
+            </label>
+            <input type="text" id="nombre" name="nombre" class="form-control"
+            placeholder="Escribe tu nombre">
+        </div>
+
+        <!-- Carreras -->
+        <div class="form-group">
+            <label for="carrera">
+                Carreras:
+            </label>
+            <select class="form-control" name="carrera" id="carrera">
+                <option value="Ingeniería Informática">Ingeniería Informática</option>
+                <option value="Contaduría">Contaduría</option>
+                <option value="Ingeniería Civil">Ingeniería Civil</option>
+            </select>
+        </div>
+
+        <!-- Promedio -->
+        <div class="form-group">
+            <label for="promedio">
+                Promedio:
+            </label>
+            <input type="number" id="promedio" name="promedio" class="form-control"
+            placeholder="Escribe tu promedio">
+        </div>
+
+        <!-- Botón guardar -->
+        <div class="form-group">
+            <input type="submit" value="Guardar" id="btn_guardar"
+            class="btn btn-primary">
+        </div>
+    </form>
+
+    <div class="card">
+        <div class="card-body" id="salida">
+            <table id="lista_alumnos" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Fotografía</th>
+                        <th>No. Cuenta</th>
+                        <th>Nombre</th>
+                        <th>Carrera</th>
+                        <th>Promedio</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="js/tabla_alumnos.js"></script>
+</body>
+</html>
+
